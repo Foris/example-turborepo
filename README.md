@@ -13,6 +13,15 @@ As well as a few others tools preconfigured:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
+
+## System required
+
+nodejs >= 19.0.1
+
+### Authors
+
+- [@markozxuu](https://www.github.com/markozxuu)
+
 ### Useful Commands
 
 - `pnpm build` - Build all packages, including the Storybook site
