@@ -1,0 +1,33 @@
+{
+  "name": "@foris/core",
+  "version": "1.0.0",
+  "description": "primitives components",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "author": "Markoz Peña",
+  "devDependencies": {
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.4",
+    "eslint": "8.15.0",
+    "react": "18.2.0",
+    "tsup": "5.10.1",
+    "typescript": "5.0.4",
+    "@foris/tsconfig": "workspace:*",
+    "eslint-config-foris": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
